@@ -1,5 +1,5 @@
-const mainPage = '/html/main.html';
-ej1 = '/html/1.html';
+const mainPage = 'html/main.html';
+ej1 = 'html/1.html';
 
 function mainPageCall(){
     document.getElementById('contentFrame').src = mainPage;
