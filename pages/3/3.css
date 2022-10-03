@@ -1,0 +1,81 @@
+@import url(../../style.css);
+
+*{
+    margin: 0;
+}
+
+body{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    align-items: center;
+}
+
+.title{
+    padding: 10px;
+    color:brown;
+}
+
+.content{
+    background-color: coral;
+    border-radius: 25px;
+    margin: 50px 0 0 0;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
+input{
+    font-size: 16px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 0px 15px;
+    height: 36px;
+}
+
+#namePerson{
+    width: 300px;
+}
+
+.values{
+    width: 84px
+}
+
+#info{
+    width: 100%;
+    padding: 0 25px 25px 25px;
+}
+
+#info thead{
+    background-color: #2e2e2e;
+    color: white;
+    text-align: center;
+}
+
+.notas{
+    width: 84px;
+}
+
+#info tbody tr{
+    padding: 10px 12.5px;
+    background-color: white;
+}
+
+#info tbody tr:nth-last-of-type(even){
+    background-color: #d4d4d4;
+}

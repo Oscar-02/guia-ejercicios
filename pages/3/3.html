@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ES">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3</title>
-    <script src="/js/Ejercicio3.js"></script>
+    <link rel="stylesheet" href="3.css">
 </head>
 <body>
-    
+    <header>
+        <div class="title">
+            <h1>Promedio de alumnos</h1>
+        </div>
+        <div class="description">
+            <p>Esta pagina obtiene el promedio de varios alumnos
+            </p>
+        </div>
+    </header>
+    <div class="content">
+        <div class="add-items">
+            <input id="namePerson" type="text" placeholder="Nombre" required>
+            <input id="value1" class="values" type="number" placeholder="Nota 1" required>
+            <input id="value2" class="values" type="number" placeholder="Nota 2" required>
+            <input id="value3" class="values" type="number" placeholder="Nota 3" required>
+            <input type="button" value="Agregar" onclick="onClickButton()">
+        </div>
+        <div class="table">
+            <table id="info" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th class="notas">Nota 1</th>
+                        <th class="notas">Nota 2</th>
+                        <th class="notas">Nota 3</th>
+                        <th class="notas">Promedio</th>
+                    </tr>
+                </th>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="3.js"></script>
 </body>
 </html>
