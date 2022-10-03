@@ -1,15 +1,15 @@
-var notas =[];
+var Grado =[];
 
 function ingresarNotas() {
     let nota = document.getElementById('texto').value;
-    notas.push(nota);
-    console.log(notas);
+    Grado.push(nota);
+    console.log(Grado);
 }
 
 function mostrarResultado() {
     var nota_validas = []
     let h1 = document.getElementById('resultado')
-    notas.forEach(element => {
+    Grado.forEach(element => {
         if(8.5 == element){
             nota_validas.push(element)
         }
