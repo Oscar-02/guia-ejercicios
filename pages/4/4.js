@@ -12,7 +12,7 @@ function mayormenor(){
 
         }
         else{
-            alert(`El orden mayor a menor es: ${num1}, ${num3}, ${num2}.`);
+            alert(`El orden menor a mayor es: ${num1}, ${num3}, ${num2}.`);
         }
         
 
@@ -21,10 +21,10 @@ function mayormenor(){
     if(num2 < num1 && num2 < num3){
         
         if(num1 < num3){
-            alert(`El orden mayor a menor es: ${num2}, ${num1}, ${num3}.`);
+            alert(`El orden menor a mayor es: ${num2}, ${num1}, ${num3}.`);
         }
         else{
-            alert(`El orden mayor a menor es: ${num2}, ${num3}, ${num1}.`);
+            alert(`El orden menor a mayor es: ${num2}, ${num3}, ${num1}.`);
         }
 
     }
@@ -32,10 +32,10 @@ function mayormenor(){
     if(num3 < num1 && num3 < num2){
         
         if(num1 < num2){
-            alert(`El orden mayor a menor es: ${num3}, ${num1}, ${num2}.`);
+            alert(`El orden menor a mayor es: ${num3}, ${num1}, ${num2}.`);
         }
         else{
-            alert(`El orden mayor a menor es: ${num3}, ${num2}, ${num1}.`);
+            alert(`El orden menor a mayor es: ${num3}, ${num2}, ${num1}.`);
         }
 
     }
