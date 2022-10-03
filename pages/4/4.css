@@ -1,0 +1,85 @@
+:root{
+    --fuenteheading:'PT Sans', sans-serif;
+    --fuenteparrafos: 'Open Sans', sans-serif;
+    --background: #383838;
+    --formcolor: #066163;
+    --fontcolor: #F2F2F2;
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*? 10px = 1rem */
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteparrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: transparent;
+}
+
+/**Globales**/
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteheading);
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+/****/
+
+
+.formulario{
+    width: 40rem;
+    background: var(--formcolor);
+    padding: 4rem 6rem 8rem 6rem;
+    margin: auto;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    color: var(--fontcolor);
+    text-align: center;
+    box-shadow: 7px 13px 27px #000;
+    
+}
+
+.input_texto{
+    background: var(--formcolor);
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.6rem;
+    border-radius: 0.4rem;
+    border: 2px solid var(--background);
+    color: var(--fontcolor);
+}
+
+.formulario .boton{
+    width: 100%;
+    background: var(--background);
+    border: none;
+    color: var(--fontcolor);
+    padding: 1.2rem;
+}

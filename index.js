@@ -1,6 +1,7 @@
 const mainPage = 'pages/main.html';
 ej1 = 'pages/1/1.html';
 ej2 = 'pages/2/2.html';
+ej4 = 'pages/4/4.html';
 ej5 = 'pages/5/5.html';
 
 function mainPageCall(){
@@ -13,6 +14,10 @@ function ej1Call(){
 
 function ej2Call(){
     document.getElementById('contentFrame').src = ej2;
+}
+
+function ej4Call(){
+    document.getElementById('contentFrame').src = ej4;
 }
 
 function ej5Call(){
