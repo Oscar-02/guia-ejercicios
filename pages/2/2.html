@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+    <script defer src="2.js"></script>
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <span style="font-family: Segoe Fluent Icons, Segoe MDL2 Assets; font-size: 40px; padding: 0 10px 0 0;">&#xE753;</span>
+            <h1>El Clima ( informacion proporcionada por: </h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/OpenWeather-Logo.jpg" height="75" alt="OpenWeatherMap.org">
+            <h1>)</h1>
+        </div>
+        <div class="description">
+            <p>Esta pagina obtiene la ultima informacion climatica<br>disponible y muestra las temperaturas minimas
+                y maximas.<br><span style="font-weight: bold; font-size: 16px;">Nota: Temperaturas en base a las
+                12:00 p.m. de la ciudad de Santa Tecla.</span>
+            </p>
+        </div>
+    </header>
+    <div class="content">
+        <div class="min-max">
+            <div class="min">
+                <span class="tempMinMax">Temperatura Minima:</span>
+                <span id="minValue" class="tempValue">0℃</span>
+            </div>
+            <div class="max">
+                <span class="tempMinMax">Temperatura Maxima:</span>
+                <span id="maxValue" class="tempValue">0℃</span>
+            </div>
+        </div>
+        <div class="info">
+            <table cellspacing="0">
+                <thead>
+                    <td>Fecha</td>
+                    <td class="temp">Temperatura</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="day1">00-00-0000</td>
+                        <td id="temp1" class="temp">0℃</td>
+                    </tr>
+                    <tr>
+                        <td id="day2">00-00-0000</td>
+                        <td id="temp2" class="temp">0℃</td>
+                    </tr>
+                    <tr>
+                        <td id="day3">00-00-0000</td>
+                        <td id="temp3" class="temp">0℃</td>
+                    </tr>
+                    <tr>
+                        <td id="day4">00-00-0000</td>
+                        <td id="temp4" class="temp">0℃</td>
+                    </tr>
+                    <tr>
+                        <td id="day5">00-00-0000</td>
+                        <td id="temp5" class="temp">0℃</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
