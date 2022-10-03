@@ -1,4 +1,4 @@
-var url = 'http://api.openweathermap.org/data/2.5/forecast?id=3584257&appid=ec758be434c3b9da7a47264f723bc5a6&units=metric';
+var url = 'https://api.openweathermap.org/data/2.5/forecast?id=3584257&appid=ec758be434c3b9da7a47264f723bc5a6&units=metric';
 var city, minTemp, maxTemp;
 var days = new Array(5);
 var temps = new Int16Array(5);
