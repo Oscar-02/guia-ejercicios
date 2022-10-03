@@ -1,7 +1,7 @@
 const mainPage = 'pages/main.html';
 ej1 = 'pages/1/1.html';
 ej2 = 'pages/2/2.html';
-ej3 = 'pages/5/5.html'
+ej5 = 'pages/5/5.html'
 
 function mainPageCall(){
     document.getElementById('contentFrame').src = mainPage;
