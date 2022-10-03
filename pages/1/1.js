@@ -14,7 +14,7 @@ function mostrarResultado() {
             nota_validas.push(element)
         }
     } );      
-    h1.innerHTML = nota_validas;
+    h1.innerHTML = "Notas iguales a 8.5: " + nota_validas.length;
 }
 
 

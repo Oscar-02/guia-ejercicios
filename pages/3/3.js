@@ -20,18 +20,21 @@ function onClickButton(){
             alert('Lo sentimos, puede que algunos de los valores ingresados es mayor a la nota maxima (10.0).')
         }
         else{
+            nombres[nombres.length] = nombreVal;
+            notas[notas.length] = [nota1Val, nota2Val, nota3Val];
+
             var prom = (nota1Val + nota2Val + nota3Val) / 3;
-        var data = document.getElementById("info").getElementsByTagName("tbody")[0].insertRow();
-        var cell0 = data.insertCell(0);
-        var cell1 = data.insertCell(1);
-        var cell2 = data.insertCell(2);
-        var cell3 = data.insertCell(3);
-        var cell4 = data.insertCell(4);
-        cell0.innerHTML = nombreVal;
-        cell1.innerHTML = nota1Val.toFixed(1);
-        cell2.innerHTML = nota2Val.toFixed(1);
-        cell3.innerHTML = nota3Val.toFixed(1);
-        cell4.innerHTML = prom.toFixed(1);
+            var data = document.getElementById("info").getElementsByTagName("tbody")[0].insertRow();
+            var cell0 = data.insertCell(0);
+            var cell1 = data.insertCell(1);
+            var cell2 = data.insertCell(2);
+            var cell3 = data.insertCell(3);
+            var cell4 = data.insertCell(4);
+            cell0.innerHTML = nombreVal;
+            cell1.innerHTML = nota1Val.toFixed(1);
+            cell2.innerHTML = nota2Val.toFixed(1);
+            cell3.innerHTML = nota3Val.toFixed(1);
+            cell4.innerHTML = prom.toFixed(1);
         }
     }
     else alert('Lo sentimos, pero uno o varios de los campos estan vacios o no tienen el formato correcto.');
