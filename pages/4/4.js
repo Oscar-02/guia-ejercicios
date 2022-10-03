@@ -1,46 +1,46 @@
 function mayormenor(){
 
-    const num1 = parseInt(document.getElementById('firstNumber').value);
-    const num2 = parseInt(document.getElementById('secondNumber').value);
-    const num3 = parseInt(document.getElementById('thirdNumber').value);
-    let mensaje;
+    var nums = new Array();
+    nums[0] = parseInt(document.getElementById('firstNumber').value);
+    nums[1] = parseInt(document.getElementById('secondNumber').value);
+    nums[2] = parseInt(document.getElementById('thirdNumber').value);
 
-    if(num1 < num2 && num1 < num3){
+    if(nums[0] < nums[1] && nums[0] < nums[2]){
         
-        if(num2 < num3){
-            alert(`El orden menor a mayor es: ${num1}, ${num2}, ${num3}.`);
+        if(nums[1] < nums[2]){
+            alert(`El orden menor a mayor es: ${nums[0]}, ${nums[1]}, ${nums[2]}.`);
 
         }
         else{
-            alert(`El orden menor a mayor es: ${num1}, ${num3}, ${num2}.`);
+            alert(`El orden menor a mayor es: ${nums[0]}, ${nums[2]}, ${nums[1]}.`);
         }
         
 
     }
 
-    if(num2 < num1 && num2 < num3){
+    if(nums[1] < nums[0] && nums[1] < nums[2]){
         
-        if(num1 < num3){
-            alert(`El orden menor a mayor es: ${num2}, ${num1}, ${num3}.`);
+        if(nums[0] < nums[2]){
+            alert(`El orden menor a mayor es: ${nums[1]}, ${nums[0]}, ${nums[2]}.`);
         }
         else{
-            alert(`El orden menor a mayor es: ${num2}, ${num3}, ${num1}.`);
+            alert(`El orden menor a mayor es: ${nums[1]}, ${nums[2]}, ${nums[0]}.`);
         }
 
     }
 
-    if(num3 < num1 && num3 < num2){
+    if(nums[2] < nums[0] && nums[2] < nums[1]){
         
-        if(num1 < num2){
-            alert(`El orden menor a mayor es: ${num3}, ${num1}, ${num2}.`);
+        if(nums[0] < nums[1]){
+            alert(`El orden menor a mayor es: ${nums[2]}, ${nums[0]}, ${nums[1]}.`);
         }
         else{
-            alert(`El orden menor a mayor es: ${num3}, ${num2}, ${num1}.`);
+            alert(`El orden menor a mayor es: ${nums[2]}, ${nums[1]}, ${nums[0]}.`);
         }
 
     }
 
-    if(num1 == num2 && num1 == num3 && num2 == num3){
+    if(nums[0] == nums[1] && nums[0] == nums[2] && nums[1] == nums[2]){
         alert(`Los tres numeros son iguales.`);
     }
     
