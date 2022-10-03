@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="6.css">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <div class="boxes">
+        <div class="divide">
+            <div class="content">
+                <span class="title">Dividir</span>
+                <span class="subtitle">Division de dos numeros</span>
+                <input type="number" class="textbox" id="divide1" placeholder="Dividendo" onkeyup="Divide()">
+                <span style="font-size: 24px; font-family: Segoe Fluent Icons, Segoe MDL2 Assets;">&#xe94a;</span>
+                <input type="number" class="textbox" id="divide2" placeholder="Divisor" onkeyup="Divide()">
+                <span style="font-size: 24px; font-family: Segoe Fluent Icons, Segoe MDL2 Assets;">&#xe94e;</span>
+                <span id="equals1" style="font-size: 30px; font-weight: bold; margin: 20px 0; text-align: center;">0</span>
+            </div>
+        </div>
+        <div class="cubic">
+            <div class="content">
+                <span class="title">Cubo</span>
+                <span class="subtitle">Potencia cubica de un numero</span>
+                <div class="input">
+                    <input type="number" class="textbox" id="cubic" placeholder="Valor por potenciar" onkeyup="Cubic()">
+                    <span style="font-size: 24px;"><sup>3</sup></span>
+                </div>
+                <span style="font-size: 24px; font-family: Segoe Fluent Icons, Segoe MDL2 Assets;">&#xe94e;</span>
+                <span id="equals2" style="font-size: 30px; font-weight: bold; margin: 20px 0; text-align: center;">0</span>
+            </div>
+        </div>
+        <div class="imc">
+            <div class="content">
+                <span class="title">IMC</span>
+                <span class="subtitle">Indice de Masa Corporal</span>
+                <div class="input-weigth">
+                    <span style="font-size: 24px;">Peso (kg): </span>
+                    <input type="number" class="textbox" style="width: 100px;" id="weight" placeholder="0 kg" onkeyup="IMC()">
+                </div>
+                <div class="input-height">
+                    <span style="font-size: 24px;">Altura (m): </span>
+                    <input type="number" class="textbox" style="width: 100px; margin: 10px 0;" id="height" placeholder="0 m" onkeyup="IMC()">
+                </div>
+                <span style="font-size: 30px; font-weight: bold; margin: 20px 0 0 0;">IMC ( \(kg \over m^2\) )</span>
+                <div class="result" style="margin: 20px 0; text-align: center;">
+                    <span id="equals3" style="font-size: 30px; font-weight: bold;">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async src="6.js"></script>
+</body>
+</html>

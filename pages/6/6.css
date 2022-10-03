@@ -1,0 +1,73 @@
+@import url(../../style.css);
+
+*{
+    margin: 0;
+}
+
+body{
+    padding: 20px;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.divide{
+    width: 300px;
+    height: 450px;
+    background-color: #ac3e31;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 30px -5px rgba(0, 0, 0, .95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cubic{
+    width: 300px;
+    height: 450px;
+    background-color: #6ab187;
+    border-radius: 25px;
+    box-shadow: 5px 5px 30px -5px rgba(0, 0, 0, .95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imc{
+    width: 300px;
+    height: 450px;
+    background-color: #20283e;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 30px -5px rgba(0, 0, 0, .95);
+}
+
+.content{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 18px;
+    font-weight: light;
+    text-align: center;
+}
+
+.textbox {
+    margin: 25px 0;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+}
