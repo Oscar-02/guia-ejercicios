@@ -5,10 +5,10 @@ function mayormenor(){
     const num3 = parseInt(document.getElementById('thirdNumber').value);
     let mensaje;
 
-    if(num1 > num2 && num1 > num3){
+    if(num1 < num2 && num1 < num3){
         
-        if(num2 > num3){
-            alert(`El orden mayor a menor es: ${num1}, ${num2}, ${num3}.`);
+        if(num2 < num3){
+            alert(`El orden menor a mayor es: ${num1}, ${num2}, ${num3}.`);
 
         }
         else{
@@ -18,9 +18,9 @@ function mayormenor(){
 
     }
 
-    if(num2 > num1 && num2 > num3){
+    if(num2 < num1 && num2 < num3){
         
-        if(num1 > num3){
+        if(num1 < num3){
             alert(`El orden mayor a menor es: ${num2}, ${num1}, ${num3}.`);
         }
         else{
@@ -29,9 +29,9 @@ function mayormenor(){
 
     }
 
-    if(num3 > num1 && num3 > num2){
+    if(num3 < num1 && num3 < num2){
         
-        if(num1 > num2){
+        if(num1 < num2){
             alert(`El orden mayor a menor es: ${num3}, ${num1}, ${num2}.`);
         }
         else{
